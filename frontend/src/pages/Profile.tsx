@@ -374,16 +374,16 @@ export default function ProfilePage() {
 
   const hasCredentialChanges = Boolean(
     brokerApiKey ||
-      brokerApiSecret ||
-      brokerApiKeyMarket ||
-      brokerApiSecretMarket ||
-      (selectedBroker && selectedBroker !== brokerCredentials?.current_broker)
+    brokerApiSecret ||
+    brokerApiKeyMarket ||
+    brokerApiSecretMarket ||
+    (selectedBroker && selectedBroker !== brokerCredentials?.current_broker)
   )
 
   const hasNgrokChanges = Boolean(
     ngrokEnabled !== brokerCredentials?.ngrok_allow ||
-      (hostServer && hostServer !== brokerCredentials?.host_server) ||
-      (websocketUrl && websocketUrl !== brokerCredentials?.websocket_url)
+    (hostServer && hostServer !== brokerCredentials?.host_server) ||
+    (websocketUrl && websocketUrl !== brokerCredentials?.websocket_url)
   )
 
   const handleNgrokSave = async () => {
@@ -762,11 +762,10 @@ export default function ProfilePage() {
                     {Object.entries(passwordRequirements).map(([key, met]) => (
                       <div
                         key={key}
-                        className={`flex items-center gap-1 px-2 py-1 rounded-full border ${
-                          met
+                        className={`flex items-center gap-1 px-2 py-1 rounded-full border ${met
                             ? 'bg-green-500/10 border-green-500 text-green-600'
                             : 'bg-muted border-border text-muted-foreground'
-                        }`}
+                          }`}
                       >
                         {met ? <Check className="h-3 w-3" /> : <X className="h-3 w-3" />}
                         <span>
@@ -1141,7 +1140,7 @@ export default function ProfilePage() {
             <FolderCheck className="h-4 w-4" />
             <AlertTitle>File Permissions Monitor</AlertTitle>
             <AlertDescription>
-              Check file and directory permissions for OpenAlgo components. Incorrect permissions may cause
+              Check file and directory permissions for Tratonomous components. Incorrect permissions may cause
               the application to malfunction.
             </AlertDescription>
           </Alert>
@@ -1229,11 +1228,10 @@ export default function ProfilePage() {
                   {permissionsData.checks.map((check) => (
                     <div
                       key={check.path}
-                      className={`flex items-start gap-3 p-3 rounded-lg border ${
-                        check.is_correct
+                      className={`flex items-start gap-3 p-3 rounded-lg border ${check.is_correct
                           ? 'bg-green-50 dark:bg-green-950/20 border-green-200 dark:border-green-800'
                           : 'bg-red-50 dark:bg-red-950/20 border-red-200 dark:border-red-800'
-                      }`}
+                        }`}
                     >
                       {/* Status Icon */}
                       <div className="mt-0.5">
@@ -1405,11 +1403,10 @@ export default function ProfilePage() {
                       key={themeOption.value}
                       onClick={() => handleThemeModeChange(themeOption.value)}
                       disabled={isAnalyzerMode}
-                      className={`flex items-start gap-4 p-4 rounded-lg border-2 transition-all text-left ${
-                        isSelected
+                      className={`flex items-start gap-4 p-4 rounded-lg border-2 transition-all text-left ${isSelected
                           ? 'border-primary bg-primary/5'
                           : 'border-border hover:border-primary/50'
-                      } ${isAnalyzerMode ? 'cursor-not-allowed' : 'cursor-pointer'}`}
+                        } ${isAnalyzerMode ? 'cursor-not-allowed' : 'cursor-pointer'}`}
                     >
                       <div
                         className={`p-2 rounded-lg ${isSelected ? 'bg-primary text-primary-foreground' : 'bg-muted'}`}
@@ -1448,11 +1445,10 @@ export default function ProfilePage() {
                       key={accentColor.value}
                       onClick={() => handleAccentColorChange(accentColor.value)}
                       disabled={isAnalyzerMode}
-                      className={`flex flex-col items-center gap-2 p-3 rounded-lg border-2 transition-all ${
-                        isSelected
+                      className={`flex flex-col items-center gap-2 p-3 rounded-lg border-2 transition-all ${isSelected
                           ? 'border-primary bg-primary/5'
                           : 'border-border hover:border-primary/50'
-                      } ${isAnalyzerMode ? 'cursor-not-allowed' : 'cursor-pointer'}`}
+                        } ${isAnalyzerMode ? 'cursor-not-allowed' : 'cursor-pointer'}`}
                       title={accentColor.label}
                     >
                       <div
@@ -1767,7 +1763,7 @@ export default function ProfilePage() {
                 Your configuration has been saved to the <code className="bg-muted px-1 rounded">.env</code> file.
               </p>
               <p>
-                To apply these changes, please restart the OpenAlgo application using your usual method (terminal, service manager, or container orchestrator).
+                To apply these changes, please restart the Tratonomous application using your usual method (terminal, service manager, or container orchestrator).
               </p>
             </AlertDialogDescription>
           </AlertDialogHeader>

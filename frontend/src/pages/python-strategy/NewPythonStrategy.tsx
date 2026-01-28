@@ -12,8 +12,8 @@ import { Label } from '@/components/ui/label'
 import { SCHEDULE_DAYS } from '@/types/python-strategy'
 
 const EXAMPLE_STRATEGY = `"""
-Example OpenAlgo Strategy
-This is a minimal example showing how to use the OpenAlgo Python SDK.
+Example Tratonomous Strategy
+This is a minimal example showing how to use the Tratonomous Python SDK.
 """
 
 import os
@@ -21,7 +21,7 @@ import time
 from openalgo import api
 
 # Get API key from environment variable
-API_KEY = os.getenv('OPENALGO_API_KEY')
+API_KEY = os.getenv('TRATONOMOUS_API_KEY')
 
 # Initialize the API client
 client = api(
@@ -212,9 +212,8 @@ export default function NewPythonStrategy() {
             <div className="space-y-2">
               <Label htmlFor="file">Python Script</Label>
               <div
-                className={`border-2 border-dashed rounded-lg p-6 text-center cursor-pointer hover:border-primary transition-colors ${
-                  errors.file ? 'border-red-500' : ''
-                }`}
+                className={`border-2 border-dashed rounded-lg p-6 text-center cursor-pointer hover:border-primary transition-colors ${errors.file ? 'border-red-500' : ''
+                  }`}
                 onClick={() => fileInputRef.current?.click()}
               >
                 <input
@@ -292,18 +291,16 @@ export default function NewPythonStrategy() {
                     <button
                       type="button"
                       key={day.value}
-                      className={`flex items-center gap-2 px-3 py-2 border rounded-lg cursor-pointer transition-colors ${
-                        selectedDays.includes(day.value)
+                      className={`flex items-center gap-2 px-3 py-2 border rounded-lg cursor-pointer transition-colors ${selectedDays.includes(day.value)
                           ? 'bg-primary text-primary-foreground border-primary'
                           : 'hover:bg-muted'
-                      }`}
+                        }`}
                       onClick={() => handleDayToggle(day.value)}
                     >
-                      <div className={`h-4 w-4 rounded border flex items-center justify-center ${
-                        selectedDays.includes(day.value)
+                      <div className={`h-4 w-4 rounded border flex items-center justify-center ${selectedDays.includes(day.value)
                           ? 'bg-primary-foreground border-primary-foreground'
                           : 'border-current'
-                      }`}>
+                        }`}>
                         {selectedDays.includes(day.value) && (
                           <svg className="h-3 w-3 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                             <polyline points="20 6 9 17 4 12" />

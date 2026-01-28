@@ -127,7 +127,7 @@ export default function ChartinkIndex() {
           <AlertDescription>
             Chartink cannot send alerts to localhost. Use <strong>ngrok</strong>,{' '}
             <strong>Cloudflare Tunnel</strong>, <strong>VS Code Dev Tunnel</strong>, or a{' '}
-            <strong>custom domain</strong> to expose your OpenAlgo instance to the internet.
+            <strong>custom domain</strong> to expose your Tratonomous instance to the internet.
             Update <code>HOST_SERVER</code> in your <code>.env</code> file with your external URL.
           </AlertDescription>
         </Alert>
@@ -167,9 +167,8 @@ export default function ChartinkIndex() {
             <Card key={strategy.id} className="relative overflow-hidden">
               {/* Status indicator bar */}
               <div
-                className={`absolute top-0 left-0 right-0 h-1 ${
-                  strategy.is_active ? 'bg-green-500' : 'bg-gray-300 dark:bg-gray-600'
-                }`}
+                className={`absolute top-0 left-0 right-0 h-1 ${strategy.is_active ? 'bg-green-500' : 'bg-gray-300 dark:bg-gray-600'
+                  }`}
               />
 
               <CardHeader className="pb-3">

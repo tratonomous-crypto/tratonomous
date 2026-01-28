@@ -245,13 +245,12 @@ export default function LatencyDashboard() {
               <div>
                 <p className="text-sm text-muted-foreground">Fast Orders</p>
                 <p
-                  className={`text-2xl font-bold ${
-                    (stats?.sla_150ms || 0) >= 95
+                  className={`text-2xl font-bold ${(stats?.sla_150ms || 0) >= 95
                       ? 'text-green-500'
                       : (stats?.sla_150ms || 0) >= 85
                         ? 'text-yellow-500'
                         : 'text-red-500'
-                  }`}
+                    }`}
                 >
                   {(stats?.sla_150ms || 0).toFixed(1)}%
                 </p>
@@ -407,13 +406,12 @@ export default function LatencyDashboard() {
                       <TableCell>
                         <div className="w-24 h-2 bg-muted rounded-full overflow-hidden">
                           <div
-                            className={`h-full ${
-                              data.avg_total < 150
+                            className={`h-full ${data.avg_total < 150
                                 ? 'bg-green-500'
                                 : data.avg_total < 250
                                   ? 'bg-yellow-500'
                                   : 'bg-red-500'
-                            }`}
+                              }`}
                             style={{
                               width: `${Math.max(0, Math.min(100, ((400 - data.avg_total) / 400) * 100))}%`,
                             }}
@@ -579,7 +577,7 @@ export default function LatencyDashboard() {
                     <div>
                       <span className="font-semibold text-sm">Platform Processing</span>
                       <Badge variant="outline" className="ml-2 text-xs">
-                        OpenAlgo
+                        Tratonomous
                       </Badge>
                       <p className="text-xs text-muted-foreground mt-1">
                         Authentication, validation & logging

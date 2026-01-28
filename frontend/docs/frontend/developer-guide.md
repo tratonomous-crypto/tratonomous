@@ -1,6 +1,6 @@
 # Developer Guide
 
-This guide covers everything you need to know to develop the OpenAlgo frontend.
+This guide covers everything you need to know to develop the Tratonomous frontend.
 
 ## Prerequisites
 
