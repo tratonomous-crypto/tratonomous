@@ -258,7 +258,7 @@ export default function Login() {
             <div className="flex justify-center lg:justify-start gap-4">
               <Button variant="outline" asChild>
                 <a
-                  href="https://github.com/marketcalls/openalgo"
+                  href="https://github.com/tratonomous-crypto/tratonomous"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"

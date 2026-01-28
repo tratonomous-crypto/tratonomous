@@ -532,8 +532,8 @@ If you hit rate limits:
 - GoCharting Help: https://gocharting.com/help
 
 ### Community
-- Tratonomous GitHub: https://github.com/marketcalls/openalgo
-- Report Issues: https://github.com/marketcalls/openalgo/issues
+- Tratonomous GitHub: https://github.com/tratonomous-crypto/tratonomous
+- Report Issues: https://github.com/tratonomous-crypto/tratonomous/issues
 
 ### Video Tutorials
 - Check Tratonomous YouTube channel for video guides
