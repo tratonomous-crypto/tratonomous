@@ -1,24 +1,24 @@
-# OpenAlgo - Open Source Algorithmic Trading Platform
+# Tratonomous - Open Source Algorithmic Trading Platform
+
+> **📋 Fork Notice**: This is a modified version of [OpenAlgo](https://github.com/marketcalls/openalgo), originally created by [marketcalls](https://github.com/marketcalls). This fork is maintained by [Tratonomous](https://github.com/tratonomous-crypto) and is released under the same AGPL-3.0 license as the original project.
 
 <div align="center">
 
-[![PyPI Downloads](https://static.pepy.tech/badge/openalgo)](https://pepy.tech/projects/openalgo)
-[![PyPI Downloads](https://static.pepy.tech/badge/openalgo/month)](https://pepy.tech/projects/openalgo)
-[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/openalgoHQ)](https://twitter.com/openalgoHQ)
-[![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCw7eVneIEyiTApy4RtxrJsQ)](https://www.youtube.com/@openalgo)
-[![Discord](https://img.shields.io/discord/1219847221055455263)](https://discord.com/invite/UPh7QPsNhP)
+[![GitHub](https://img.shields.io/badge/GitHub-tratonomous--crypto%2Ftratonomous-blue)](https://github.com/tratonomous-crypto/tratonomous)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
 </div>
 
-**OpenAlgo** is a production-ready, open-source algorithmic trading platform built with Flask and React. It provides a unified API layer across 24+ Indian brokers, enabling seamless integration with popular platforms like TradingView, Amibroker, Excel, Python, and AI agents. Designed for traders and developers, OpenAlgo makes algo trading accessible, secure, and powerful.
+**Tratonomous** is a production-ready, open-source algorithmic trading platform built with Flask and React. It provides a unified API layer across 24+ Indian brokers, enabling seamless integration with popular platforms like TradingView, Amibroker, Excel, Python, and AI agents. Designed for traders and developers, Tratonomous makes algo trading accessible, secure, and powerful.
 
 ## Quick Links
 
-- **Documentation**: [docs.openalgo.in](https://docs.openalgo.in)
+- **Documentation**: [docs.openalgo.in](https://docs.openalgo.in) *(upstream documentation)*
+- **Source Code**: [github.com/tratonomous-crypto/tratonomous](https://github.com/tratonomous-crypto/tratonomous)
 - **Installation Guide**: [Getting Started](https://docs.openalgo.in/installation-guidelines/getting-started)
 - **Upgrade Guide**: [Upgrade Instructions](https://docs.openalgo.in/installation-guidelines/getting-started/upgrade)
-- **Why OpenAlgo**: [Why Build with OpenAlgo](https://docs.openalgo.in/why-to-build-with-openalgo)
-- **Video Tutorial**:
+- **Why Tratonomous**: Based on [OpenAlgo](https://docs.openalgo.in/why-to-build-with-openalgo)
+- **Video Tutorial** (OpenAlgo):
 
 [![What is OpenAlgo](https://img.youtube.com/vi/kAS3jTb3OkI/0.jpg)](https://www.youtube.com/watch?v=kAS3jTb3OkI)
 
@@ -269,12 +269,12 @@ OpenAlgo is part of a larger open-source trading ecosystem:
 
 ### Quick Start with UV
 
-OpenAlgo uses the modern `uv` package manager for faster, more reliable installations:
+Tratonomous uses the modern `uv` package manager for faster, more reliable installations:
 
 ```bash
 # Clone the repository
-git clone https://github.com/marketcalls/openalgo.git
-cd openalgo
+git clone https://github.com/tratonomous-crypto/tratonomous.git
+cd tratonomous
 
 # Install UV package manager
 pip install uv
@@ -333,18 +333,29 @@ We welcome contributions! To contribute:
 
 ## Community & Support
 
-- **Discord**: [Join our community](https://www.openalgo.in/discord)
-- **Twitter/X**: [@openalgoHQ](https://twitter.com/openalgoHQ)
-- **YouTube**: [@openalgo](https://www.youtube.com/@openalgo)
-- **GitHub Issues**: [Report bugs or request features](https://github.com/marketcalls/openalgo/issues)
+- **Tratonomous Issues**: [Report bugs or request features](https://github.com/tratonomous-crypto/tratonomous/issues)
+- **Discord** (OpenAlgo): [Join the community](https://www.openalgo.in/discord)
+- **Twitter/X** (OpenAlgo): [@openalgoHQ](https://twitter.com/openalgoHQ)
+- **YouTube** (OpenAlgo): [@openalgo](https://www.youtube.com/@openalgo)
 
 ## License
 
-OpenAlgo is released under the **AGPL V3.0 License**. See [LICENSE](LICENSE) for details.
+Tratonomous is released under the **AGPL V3.0 License**. See [LICENSE](license.txt) for details.
+
+### Original Project Attribution
+
+This project is a fork of **[OpenAlgo](https://github.com/marketcalls/openalgo)**, which is also licensed under AGPL-3.0.
+
+- **Original Project**: [OpenAlgo](https://github.com/marketcalls/openalgo)
+- **Original Author**: [marketcalls](https://github.com/marketcalls)
+- **Original License**: AGPL-3.0
+- **Original Documentation**: [docs.openalgo.in](https://docs.openalgo.in)
+
+We thank the OpenAlgo team for creating this excellent open-source trading platform.
 
 ## Credits & Acknowledgments
 
-OpenAlgo is built upon the shoulders of giants. We extend our gratitude to all the open-source projects that make this platform possible.
+Tratonomous is built upon the shoulders of giants. We extend our gratitude to all the open-source projects that make this platform possible.
 
 ### Core Framework
 - **[Flask](https://flask.palletsprojects.com)** - BSD License - Python web microframework
